@@ -27,7 +27,9 @@ const DisplayMovie = (props) => {
 const handleClick = () => {
   console.log('clicked');
   // add title of current movie to that array (push it)
-  setMovieArray([...movieArray, searchedMovie.Title])
+  if (!movieArray.includes(searchedMovie.Title)) {
+    setMovieArray([...movieArray, searchedMovie.Title])
+  }
 }
 
   return (

@@ -41,6 +41,10 @@ const Search = (props) => {
     }
 
     const handleSubmit = (e) => {
+        for (let i=0; i<10; i++) {
+            console.log("im looping!");
+        }
+        
         e.preventDefault()
         console.log("submitting!");
         // if we don't prevent the default, the page will refresh
