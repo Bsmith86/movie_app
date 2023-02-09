@@ -3,8 +3,8 @@ import React from 'react'
 const FavoriteMovies = (props) => {
     let {movieArray} = props;
     console.log(movieArray);
-    let arrayJSX = movieArray.map((title) => {
-        return <div>
+    let arrayJSX = movieArray.map((title, index) => {
+        return <div key={index}>
             {title}
         </div>
     })
