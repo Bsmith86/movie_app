@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './index.css'
 const Ratings = (props) => {
     let {searchedMovie} = props;
     if (searchedMovie !== null){
@@ -14,7 +14,7 @@ const Ratings = (props) => {
     })
 
   return (
-    <div style={{marginBottom: "50px"}}>
+    <div id='rating' style={{marginBottom: "50px"}}>
         <h1>Movie Ratings</h1>
         {ratingsJSX}
     </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
+import './index.css'
 
 
 const Search = (props) => {
@@ -53,7 +54,7 @@ const Search = (props) => {
     };
 
   return (
-    <section style={{borderBottom: "4px solid black", marginBottom: "20px", paddingBottom: "12px"}}>
+    <section id="search" style={{ borderBottom: "4px solid black", marginBottom: "20px", paddingBottom: "12px"}}>
         <h3>Search</h3>
         <form onSubmit={(event) => handleSubmit(event)}>
             <label htmlFor="movie-search">Type the name of the movie you want to see!</label>

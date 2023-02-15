@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './index.css'
 const DisplayMovie = (props) => {
   let { searchedMovie, movieArray, setMovieArray } = props;
   console.log(searchedMovie, "FROM DISPLAY_MOVIE");
@@ -7,7 +7,7 @@ const DisplayMovie = (props) => {
   const returnMovieJSX = () => {
     if (searchedMovie !== null) {
       return (
-        <div>
+        <div id='display'>
         <h3>MOVIE DISPLAY</h3>
         <h4>{searchedMovie.Title}</h4>
         <p>{searchedMovie.Plot}</p>

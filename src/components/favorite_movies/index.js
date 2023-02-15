@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './index.css'
 const FavoriteMovies = (props) => {
     let {movieArray} = props;
     console.log(movieArray);
@@ -16,7 +16,7 @@ const FavoriteMovies = (props) => {
     // })
 
   return (
-    <div style={{marginBottom: "50px"}}>
+    <div id='fav' style={{marginBottom: "50px"}}>
         <h1>Favorite Movies</h1>
         {arrayJSX}
         {/* {imgJSX} */}
